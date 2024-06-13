@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <title>레이저 초음파 기술 동향</title>
+
+    <style>
+      .table > tbody > tr > td,
+      .table > tbody > tr > th,
+      .table > tfoot > tr > td,
+      .table > tfoot > tr > th,
+      .table > thead > tr > td,
+      .table > thead > tr > th {
+        padding: 5px;
+      }
+      @media all and (max-width: 673px) {
+        .hd_mobile {
+          display: block !important;
+        }
+
+        .hd_title {
+          display: none;
+        }
+        h3 {
+          color: #fff;
+        }
+      }
+
+      @media all and (max-width: 767px) {
+        .hd_mobile {
+          display: none;
+        }
+
+        .caption h2 {
+          font-size: 16px !important;
+        }
+
+        .caption2 h5 {
+          margin-top: 2px;
+          font-size: 14px;
+        }
+      }
+
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        .hd_mobile {
+          display: none;
+        }
+
+        .caption h2 {
+          font-size: 18px !important;
+        }
+
+        .caption2 h5 {
+          margin-top: 2px;
+          font-size: 14px;
+        }
+      }
+
+      @media all and (min-width: 992px) and (max-width: 1199px) {
+        .hd_mobile {
+          display: none;
+        }
+
+        .caption h2 {
+          font-size: 25px !important;
+        }
+      }
+    </style>
+
+    <!-- 
+		4종 색상
+		emerald linear-gradient(45deg, #1c9797, #25a9aa, #31bec0) purple_top blit_emerald purple_bottom
+		purple linear-gradient(45deg, #aa2525, #971c1c, #c03231)
+		purple linear-gradient(45deg, #881c97, #9a25aa, #b031c0)
+		green linear-gradient(45deg, #82971c, #93aa25, #a6c031)
+	-->
+  </head>
+
+  <body style="padding: 0; margin: 0">
+    <div class="container" style="width: 100%;">
+      <div class="row hd_mobile" style="display: none">
+        <br />
+        <div
+          class="col-sm-6 text-center"
+          style="
+            background: linear-gradient(45deg, #881c97, #9a25aa, #b031c0);
+            color: #fff;
+            padding: 30px;
+          "
+        >
+          <h3>신축성 나노복합체를 이용한 바이오집적센서 기술</h3>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>성균관대학교 손동희 교수</p>
+              <p>성균관대학교 이혜림 석박통합과정</p>
+              <p>성균관대학교 박재현 석사과정</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-inner hd_title" style="position: relative">
+        <img
+          class="img-responsive"
+          src="https://sensor.re.kr/report/common/green_top.jpg"
+          alt=""
+        />
+        <div
+          class="caption"
+          style="position: absolute; top: 5%; left: 40px; width: 100%"
+        >
+          <h1 class="text-left" style="font-size: 28px; color: black;">
+            신축성 나노복합체를 이용한 바이오집적센서 기술
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="all"
+        style="padding-left: 20px; padding-right: 20px; max-width: 1125px"
+      >
+        <div class="row">
+          <p
+            class="col-sm-12"
+            style="
+              margin-top: 40px;
+              margin-bottom: 20px;
+              font-size: 16px;
+              font-weight: bold;
+            "
+          >
+            성균관대학교 손동희 교수 | 성균관대학교 이혜림 석박통합과정 |
+            성균관대학교 박재현 석사과정
+          </p>
+        </div>
+        <div class="row">
+          <p
+            class="col-sm-12"
+            style="
+              margin-top: 20px;
+              margin-bottom: 35px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            <img
+              style="vertical-align: text-bottom; padding: 0 10px 0 0"
+              src="https://sensor.re.kr/report/common/blit_green.jpg"
+              alt=""
+            />신축성 센서 기술의 개요
+          </p>
+          <br />
+        </div>
+        <div class="row">
+          <div class="col-sm-12" style="font-size: 15px; line-height: 25px">
+            <p>
+              최근 고령화에 따른 건강 관리와 생체 의료기기에 대한 관심이
+              높아지면서 바이오 센서 기술에 관한 연구도 함께 활발히 이루어지고
+              있다. 특히, 생체 신호 계측용 바이오 센서는 인체 내부 또는 피부
+              표면에서 발생하는 다양한 생체 신호를 실시간 측정하고 정밀 분석하기
+              위해 사용되는 기술이다.
+            </p>
+            <p>
+              대표적으로 심전도 (Electrocardiogram), 근전도 (Electromyogram),
+              뇌전도 (Electrocorticogram) 신호 등을 포함하는 생체 신호를
+              모니터링하여 환자의 질병을 진단한다. 그러나 딱딱한 실리콘 기반의
+              센서 또는 전극은 인체 조직의 물성과 맞지 않아, 조직에 상처나
+              염증을 발생시키거나 부착 유지가 되지 않아 계측하는 생체 신호의
+              품질을 저하시키는 주요한 원인이 된다. 이러한 한계를 극복하기 위해
+              조직처럼 부드럽고 신축성을 갖는 유연한 바이오 전자소자 관련한
+              혁신적인 기술이 개발되고 있다.
+            </p>
+            <p>
+              유연한 바이오 집적회로센서를 설계하기 위해 구불구불한 배선 또는
+              고유의 신축성을 갖는 기능성 고분자/하이드로젤 나노복합체 등을
+              이용하여 인장 시 발생되는 응력을 효과적으로 분산시켜, 고유의
+              전자소자의 성능을 유지하면서도 쉽게 변형할 수 있도록 하였다.
+            </p>
+            <p>
+              그 중 특히 신축성 나노복합체 기반의 바이오 전자공학은 웨어러블
+              기기뿐 아니라 뇌, 심장 그리고 말초 신경 인터페이싱 기술에서 괄목할
+              만한 발전을 이루었다. 이러한 나노복합체는 뛰어난 전기적, 기계적
+              특성을 나타내며 전자소자의 전극이나 배선, 패터닝 기술 등에
+              활용되어 역동적인 환경에서도 다양한 전기생리학적 신호를 장기간
+              안정적으로 계측할 수 있도록 하였다.
+            </p>
+            <p>
+              본 이슈리포트에서는 신축성 및 전도성 그리고 자가치유성
+              나노복합체와 이를 응용한 모듈형 전자 시스템 및 배선/전극 기술
+              기반의 신축성 바이오집적센서의 미래 발전 방향 등에 관해 기술한다.
+            </p>
+
+            <div class="row">
+              <p
+                class="col-sm-12"
+                style="margin-top: 80px; font-size: 20px; font-weight: bold"
+              >
+                <img
+                  style="vertical-align: text-bottom; padding: 0 10px 0 0"
+                  src="https://sensor.re.kr/report/common/blit_green.jpg"
+                  alt=""
+                />
+                신축성 센서의 주요 특징
+              </p>
+            </div>
+            <p
+              class="col-sm-12"
+              style="margin-top: 30px; font-size: 18px; font-weight: bold"
+            >
+              자가치유 가능한 신축성 및 전도성 복합체 소재 기술
+            </p>
+            <p>
+              나노복합체를 기반으로 한 신축성 생체전자소자의 개발은 적절한
+              신축성과 전도성을 동시에 갖춘 나노복합체의 제작에서부터 시작된다.
+              적절한 종류의 탄성 고분자와 전도성 물질의 선택, 그리고 이들의 최적
+              비율을 결정하는 단계는 높은 전기적 성능과 기계적 신축성을 동시에
+              달성하기 위한 중요한 과정이다.
+            </p>
+            <p>
+              금속 나노입자, 금속 나노와이어, 액체 금속 등의 금속/무기
+              나노물질과, 탄소나노튜브, 그래핀 등의 탄소 나노물질, 그리고
+              PEDOT:PSS, Polypyrrole, P3HT와 같은 유기 나노물질 등이 전도성
+              물질로 사용된다. 이들은 신축성 고분자 매트릭스 내에서 전기적
+              경로를 형성하여 높은 전도성과 낮은 임피던스를 부여한다.
+            </p>
+            <br />
+            <p
+              class="col-sm-12"
+              style="font-size: 13px; text-align: center; margin-bottom: 5%"
+            >
+              <img
+                class="img-responsive center-block"
+                style="width: 100%; max-width: 720px"
+                src="https://sensor.re.kr/report/20240422/img/img1.PNG"
+                alt="그림1"
+              />
+            </p>
+            <br />
+            <p>신축성 나노복합체의 몇 가지 대표적인 사례는 다음과 같다.</p>
+            <p>
+              그림 1.(a)는 1차원 전도성 소재인 탄소나노튜브를 자가치유성 고분자
+              매트릭스에 코팅한 전도성 및 신축성 자가치유 복합체를 나타낸다. 이
+              복합체는 외력에 의해 전도성 네트워크가 손상되어도 유리전이
+              온도()가 낮은 자가치유성 고분자의 동적인 거동에 의해 전도성과
+              기계적 특성이 자동으로 회복되는 특성을 지닌다. 이러한 특성을
+              기반으로 변형 센서, 심전도 센서 및 자가치유 디스플레이용 활성 전자
+              부품을 하나의 플랫폼으로 통합한 다기능 전자 피부 시스템을
+              구현하였다.
+            </p>
+            <p>
+              이외에, 자가치유 고분자와 은 플레이크/나노입자를 결합하여 신축성이
+              뛰어나고 전도성이 높은 나노복합체를 개발하였다(그림 1b, c). 이러한
+              나노복합체는 전기적 네트워크를 형성함으로써 기존 소재보다 전도성을
+              향상시켰으며 자가치유 효과를 이용하여 기계적 내구성을 강화하였다.
+              해당 연구에서는 복합체를 인체와 전자소자를 잇는 배선으로 활용해
+              사람 손가락의 근전도 신호를 로봇 팔에 안정적으로 전송하여 손의
+              움직임을 모사할 수 있도록 하였다.
+            </p>
+            <p>
+              은 나노복합체를 생체에 삽입하면 은이 산화되면서 유독한 은 이온이
+              체내에 방출된다는 단점이 있다. 최근 연구에서는 은 플레이크 입자를
+              금 나노쉘로 코팅하는 방법을 통해 높은 신축성과 전도성을 유지함은
+              물론, 은의 산화를 막아 생체 내에 삽입하여도 안전하게 하여 생체
+              유해성 문제를 해결하였다(그림 1d). 이러한 복합체의 특성을 바탕으로
+              반복적인 근육 말초 신경의 움직임에도 높은 내구성과 생체 적합성을
+              지니는 보철 기기를 개발하였다.
+            </p>
+            <br />
+
+            <p
+              class="col-sm-12"
+              style="margin-top: 30px; font-size: 18px; font-weight: bold"
+            >
+              다기능 피부 센서 구현을 위한 모듈형 및 신축성 배선 기술
+            </p>
+
+            <p>
+              기존의 점퍼 케이블 같은 전자소자 간의 연결부는 단단한 물성 때문에
+              웨어러블 전자기기에의 활용이 제한되었다. 그러나 자가치유 특성이
+              있는 신축성 및 전도성 나노복합체를 배선으로 사용하는 연구가
+              진행되면서, 여러 센서를 모듈형으로 조립하여 사용자의 편의에 맞게
+              구성할 수 있는 전자기기의 개발이 가속화되었다.
+            </p>
+            <br />
+
+            <p
+              class="col-sm-12"
+              style="font-size: 13px; text-align: center; margin-bottom: 5%"
+            >
+              <img
+                class="img-responsive center-block"
+                style="width: 100%; max-width: 580px"
+                src="https://sensor.re.kr/report/20240422/img/img2.PNG"
+                alt=""
+              />
+            </p>
+            <p>
+              자가치유 고분자와 액체 금속 전도층으로 제작된 나노복합체를
+              배선으로 이용하여 번거로운 납땜 공정이나 전도성 접착제의 사용 없이
+              여러 모듈을 연결/재연결할 수 있는 플랫폼이 제안되었다(그림 2a).
+            </p>
+            <p>
+              또한, 물속에서도 자가치유가 가능한 고분자 소재로 캡슐화된 여러
+              광전자소자를 전도성 나노복합체를 통해 연결한 연구도
+              진행되었다(그림 2b).
+            </p>
+            <p>
+              자가치유 특성을 가진 전도성 나노복합체의 전기적 네트워크가
+              파괴되고 재형성되는 특징을 활용하여, 이를 비휘발성 저항 메모리
+              소재로 사용한 연구도 있다(그림 2c). 신축성 비휘발성 저항 메모리는
+              단순한 나노복합체-절연체-나노복합체 구조로 제작되었으며 원하는
+              조합의 배열대로 재구성하여 사용할 수 있다는 점이 장점이다. 해당
+              연구에서는 이를 활용하여 사람의 심장 신호를 계측하고 저장하는
+              메모리 시스템을 구축하였다.
+            </p>
+            <p>
+              이외에도 할라이드 페로브스카이트와 2차원 나노시트와 같은 광활성
+              나노 박막의 유연한 광전자 소재를 활용하여, 에너지를 수집하고
+              촉각을 감지해 해당 정보를 디스플레이로 나타낸 모듈형 웨어러블
+              광전자 시스템이 개발되었다(그림 2d).
+            </p>
+            <p>
+              은 플레이크가 함유된 자가치유 고분자 전도성 복합체를 전극과 배선
+              모두에 적용하여 사용자 정의에 따라 모양과 크기 및 기능을 쉽게
+              재구성할 수 있는 다기능 피부 센서를 완성하였다.
+            </p>
+            <br />
+
+            <p
+              class="col-sm-12"
+              style="margin-top: 30px; font-size: 18px; font-weight: bold"
+            >
+              패터닝 가능한 신축성 전극 기술
+            </p>
+            <p>
+              신축성 나노복합체의 패터닝 기술은 소자의 구조를 정밀하게
+              제어하면서 고성능의 소자 제작을 가능하게 하므로 의료, 웨어러블
+              전자기기, 에너지 저장 시스템 등 다양한 분야에서 활용될 수 있다.
+            </p>
+            <br />
+            <p
+              class="col-sm-12"
+              style="font-size: 13px; text-align: center; margin-bottom: 5%"
+            >
+              <img
+                class="img-responsive center-block"
+                style="width: 100%; max-width: 580px"
+                src="https://sensor.re.kr/report/20240422/img/img3.PNG"
+                alt=""
+              />
+            </p>
+
+            <p>
+              전도성 나노복합체 용매의 점도 및 증발 속도를 제어하여 소결없는
+              스크린 프린팅 기법을 통해 전극을 패턴화하여 160%의 높은 신축성과
+              18,550 S/cm의 높은 전도도를 가진 생체 모방 신축성 감각-뉴로모픽
+              시스템을 개발한 연구가 있다(그림 3a).
+            </p>
+            <p>
+              정전용량식 압력 센서, 저항 변화 메모리와 양자점 발광 다이오드로
+              구성된 이 시스템은 기존 열에 민감한 전자부품 대신 소결없는 전극
+              프린팅 방식의 전도체로 대체함으로써 열화를 방지함과 동시에
+              면적밀도와 구조적 안정성을 모두 개선하였다.
+            </p>
+            <p>
+              이 외에, 포토리소그래피와 열 증착법과 같은 기존 반도체 전자소자
+              공정과 호환되는 신축성 전도체를 패터닝하는 기술이 개발되었다(그림
+              3b). 양자점, 유기 반도체성 고분자, 탄성중합체를 기반으로 인체 눈의
+              기능을 모사한 능동 매트릭스형 다층구조 포토트랜지스터 배열은
+              신축성 고분자 기판 위에 나노복합체를 전사하는 방식으로 제작되었다.
+            </p>
+            <p>
+              이 공정을 이용해 제작된 포토트랜지스터는 형태 변화에도 유기 반도체
+              물질이 양자점의 간극을 메꾸어 빛이 전기로 안정적으로 변환되며,
+              높은 해상도로 빛을 감지할 수 있다. 또한, 진공 증착이 가능한
+              나노미터 수준 두께의 내열성/내화학성 유기 절연막이 개발되어 약
+              160나노미터 두께의 얇은 박막에서 최대 40%의 인장 특성을
+              확인하였다(그림 3c). 더불어 가교제 배합을 통해 웨이퍼 크기의
+              대면적 소자 제작 및 집적을 가능하게 하였다.
+            </p>
+            <p>
+              그러나 신축성 전자소자를 피부가 아닌 체내에 삽입해서 사용하게 될
+              경우, 조직 표면과 소자의 기계적 거동 차이로 적용에 어려움이
+              있었다. 따라서 신축성 있는 히알루론산 기반의 하이드로젤에 금
+              나노입자를 혼합하여 주사 주입이 가능한 전도성 나노복합체가
+              개발되었다(그림 3d).
+            </p>
+            <p>
+              조직 재생이 필요한 손상 부위에만 선택적으로 해당 나노복합체를 주사
+              주입함으로써 생체 내에서도 미세한 패턴 제어가 가능함을 보여주었다.
+              이는 부상 초기에 빠른 전기적 활성도를 복구하여 근육 및 말초 신경
+              조직을 효과적으로 치료하였다.
+            </p>
+
+            <div class="row">
+              <p
+                class="col-sm-12"
+                style="margin-top: 80px; font-size: 20px; font-weight: bold"
+              >
+                <img
+                  style="vertical-align: text-bottom; padding: 0 10px 0 0"
+                  src="https://sensor.re.kr/report/common/blit_green.jpg"
+                  alt=""
+                />
+                맺음말
+              </p>
+            </div>
+            <br />
+            <p>
+              고령화 및 기대수명 증가로 헬스 케어에 대한 관심과 소비가 증가하고
+              있다. 특히 질병 조기 진단 및 실시간 생체 신호 모니터링을 기반으로
+              한 개인 맞춤형 치료에 대한 수요가 증가하면서 신축성 바이오센서에
+              관한 연구가 활발히 이루어지고 있다.
+            </p>
+            <p>
+              그중에서도 최근 몇 년간 신축성 바이오집적센서 분야에서는, 고성능
+              나노물질이 점탄성 고분자 매트릭스에 포함된 신축성 나노복합체에
+              대한 연구가 큰 발전을 이루었다. 이에 따라 맞춤형 조직 인터페이싱이
+              가능해졌으며, 내재적 신축성, 물성, 자가치유 특성, 조직 접착력,
+              패터닝 등의 특성이 향상되어 그 응용 범위가 확대되었다.
+            </p>
+
+            <p>
+              그러나 신축성 나노복합체를 이용한 바이오집적센서가
+              상용화되기까지는 몇 가지 기술이 더욱 개발되어야 한다. 먼저,
+              나노복합체의 고해상도 패터닝 기술의 개발을 통해 좁은 영역에서도
+              전기적 신호를 정밀하게 계측하여 정확한 질병의 진단 및 치료가
+              가능하도록 해야 한다.
+            </p>
+
+            <p>
+              또한, 장기간 사용을 위해서는 신축 전자소자 자체의 지속 가능한
+              전원으로 신축성 에너지 하베스팅 및 저장 장치의 성능이 향상되어야
+              한다. 특히 무선 시스템의 경우, 신축 시 감소하는 데이터 전송 효율과
+              신뢰성 문제를 해결하기 위한 기술의 개발은 통합된 신축 전자 시스템
+              발전에 매우 필요하다.
+            </p>
+            <p>
+              이러한 기술들의 발전을 통해 신축성 나노복합체를 이용한 바이오 센서
+              기술은 헬스 케어분야에서 인간의 삶의 질을 크게 향상시킬 것으로
+              기대된다.
+            </p>
+
+            <br /><br />
+          </div>
+        </div>
+
+        <img
+          class="img-responsive"
+          src="https://sensor.re.kr/report/common/green_bottom.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
