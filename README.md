@@ -1,4 +1,4 @@
-#설정
+# 설정
 npm init -y # 초기화
 
 # Puppeteer 설치
